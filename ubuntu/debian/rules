@@ -16,8 +16,8 @@ override_dh_auto_build:
 	dh_auto_build
 
 override_dh_install:
-	install -d debian/tmp/usr/share/gz/gz-gui10/
-	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-gui10/
+	install -d debian/tmp/usr/share/gz/gz-gui11/
+	install ./obj-*/*.tag.xml debian/tmp/usr/share/gz/gz-gui11/
 	dh_install --
 
 # No way of using xfvb to run tests consistently

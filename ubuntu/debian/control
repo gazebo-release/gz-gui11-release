@@ -1,4 +1,4 @@
-Source: gz-gui10
+Source: gz-gui11
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
@@ -41,11 +41,11 @@ Build-Depends: cmake,
                qt6-declarative-dev,
                qt6-declarative-private-dev
 Vcs-Browser: https://github.com/gazebosim/gz-gui
-Vcs-Git: https://github.com/gazebo-release/gz-gui10-release
+Vcs-Git: https://github.com/gazebo-release/gz-gui11-release
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
-Package: libgz-gui10
+Package: libgz-gui11
 Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
@@ -57,13 +57,13 @@ Description: Gazebo Gui classes and functions for robot apps - Shared library
  .
  Package contains the main libraries
 
-Package: libgz-gui10-dev
+Package: libgz-gui11-dev
 Architecture: any
 Section: libdevel
 Depends: libgz-cmake5-dev,
          libgz-common7-events-dev,
          libgz-common7-profiler-dev,
-         libgz-gui10 (= ${binary:Version}),
+         libgz-gui11 (= ${binary:Version}),
          libgz-math9-dev,
          libgz-msgs12-dev,
          libgz-plugin4-dev,
@@ -102,11 +102,3 @@ Description: Gazebo Gui classes and functions for robot apps - Development files
  designed to rapidly develop robot applications.
  .
  Package for development libraries and headers.
-
-Package: gz-jetty-gui
-Depends: libgz-gui10-dev (= ${binary:Version}), ${misc:Depends}
-Architecture: all
-Priority: optional
-Section: metapackages
-Description: alias package
- Provides a package for Jetty without exposing the version number.

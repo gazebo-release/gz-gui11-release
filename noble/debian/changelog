@@ -1,17 +1,6 @@
-gz-gui10 (10.0.0-1~noble) noble; urgency=medium
+gz-gui11 (10.999.999-1~noble) noble; urgency=medium
 
-  * gz-gui10 10.0.0-1 release
+  * Stub to be removed after first entry
 
- -- Carlos Aguero <caguero@osrfoundation.org>  Mon, 29 Sep 2025 15:43:56 +0200
+ -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 03 Jan 2026 00:24:07 +0000
 
-gz-gui10 (10.0.0~pre2-1~noble) noble; urgency=medium
-
-  * gz-gui10 10.0.0~pre2-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Sat, 06 Sep 2025 13:24:38 -0500
-
-gz-gui10 (10.0.0~pre1-1~noble) noble; urgency=medium
-
-  * gz-gui10 10.0.0~pre1-1 release
-
- -- Addisu Z. Taddese <addisu@openrobotics.org>  Tue, 26 Aug 2025 00:32:51 -0500
