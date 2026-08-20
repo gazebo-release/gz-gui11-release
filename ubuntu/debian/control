@@ -5,16 +5,16 @@ Priority: optional
 Build-Depends: cmake,
                debhelper (>= 11),
                doxygen,
-               libgz-cmake5-dev,
-               libgz-common7-events-dev,
-               libgz-common7-profiler-dev,
-               libgz-math9-dev,
-               libgz-msgs12-dev,
-               libgz-plugin4-dev,
-               libgz-rendering10-ogre1-dev,
-               libgz-tools2-dev,
-               libgz-transport15-dev,
-               libgz-utils4-dev,
+               libgz-cmake6-dev,
+               libgz-common8-events-dev,
+               libgz-common8-profiler-dev,
+               libgz-math10-dev,
+               libgz-msgs13-dev,
+               libgz-plugin5-dev,
+               libgz-rendering11-ogre1-dev,
+               libgz-tools3-dev,
+               libgz-transport16-dev,
+               libgz-utils5-dev,
                libprotobuf-dev,
                libprotoc-dev,
                libtinyxml2-dev,
@@ -40,8 +40,8 @@ Build-Depends: cmake,
                qt6-base-private-dev,
                qt6-declarative-dev,
                qt6-declarative-private-dev
-Vcs-Browser: https://github.com/gazebosim/gz-gui
-Vcs-Git: https://github.com/gazebo-release/gz-gui11-release
+Vcs-Browser: https://github.com/gazebo-release/gz-gui11-release
+Vcs-Git: https://github.com/gazebo-release/gz-gui11-release.git
 Standards-Version: 4.5.1
 Homepage: http://gazebosim.org/
 
@@ -50,6 +50,9 @@ Architecture: any
 Section: libs
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Provides: libgz-gui-generic
+Conflicts: libgz-gui-generic, libgz-gui6, libgz-gui8, libgz-gui9, libgz-gui10
+Replaces: libgz-gui6, libgz-gui8, libgz-gui9, libgz-gui10
 Multi-Arch: same
 Description: Gazebo Gui classes and functions for robot apps - Shared library
  Gazebo Gui is a component in the Gazebo framework, a set of libraries
@@ -60,17 +63,17 @@ Description: Gazebo Gui classes and functions for robot apps - Shared library
 Package: libgz-gui11-dev
 Architecture: any
 Section: libdevel
-Depends: libgz-cmake5-dev,
-         libgz-common7-events-dev,
-         libgz-common7-profiler-dev,
+Depends: libgz-cmake6-dev,
+         libgz-common8-events-dev,
+         libgz-common8-profiler-dev,
          libgz-gui11 (= ${binary:Version}),
-         libgz-math9-dev,
-         libgz-msgs12-dev,
-         libgz-plugin4-dev,
-         libgz-rendering10-ogre1-dev,
-         libgz-tools2-dev,
-         libgz-transport15-dev,
-         libgz-utils4-dev,
+         libgz-math10-dev,
+         libgz-msgs13-dev,
+         libgz-plugin5-dev,
+         libgz-rendering11-ogre1-dev,
+         libgz-tools3-dev,
+         libgz-transport16-dev,
+         libgz-utils5-dev,
          libprotobuf-dev,
          libprotoc-dev,
          libtinyxml2-dev,
@@ -96,6 +99,9 @@ Depends: libgz-cmake5-dev,
          qt6-declarative-dev,
          qt6-declarative-private-dev,
          ${misc:Depends}
+Provides: libgz-gui-dev-generic
+Conflicts: libgz-gui-dev-generic, libgz-gui6-dev, libgz-gui8-dev, libgz-gui9-dev, libgz-gui10-dev
+Replaces: libgz-gui6-dev, libgz-gui8-dev, libgz-gui9-dev, libgz-gui10-dev
 Multi-Arch: same
 Description: Gazebo Gui classes and functions for robot apps - Development files
  Gazebo Gui is a component in the Gazebo framework, a set of libraries
